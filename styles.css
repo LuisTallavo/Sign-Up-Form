@@ -1,0 +1,142 @@
+* {
+
+}
+
+html, body {
+    margin: 0px; 
+    padding: 0px;
+    border: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.bg-img {
+    flex: 2;
+    background: url("images/alvaro-o-donnell.jpg") no-repeat;
+    background-size: cover;
+}
+
+.content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: url("images/wall.jpg") no-repeat;
+    background-size: cover;
+}
+
+.form-header {
+    flex: 2 1 auto;
+    width: 100%;
+    text-align: center;
+}
+
+p {
+    display: inline-block;
+    font-size: clamp(1rem, 4vh, 3rem);
+    font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+}
+
+p:first-child {
+    padding: 0px 4vw 0px 4vw;
+    margin-top: 10vh;
+    margin-bottom: 0px;
+}
+p:last-child {
+    margin: 0;
+}
+
+.form {
+    flex: 2 1 auto;
+    min-width: 100%;
+    display: grid;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    grid-template-rows: repeat(3, fr);
+    grid-template-columns: 2fr 2fr 2.5fr 2fr;
+    box-shadow: 20px 8px 20px -10px black;
+    grid-gap: 10px;
+}
+
+.footer {
+    flex: 3 1 auto;
+    min-width: 100%;
+    text-align: center;
+}
+
+.banner {
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    padding: 35px;
+    background-color: rgba(128, 128, 128, 0.2);
+    text-align: center;
+    font-size: clamp(1.5rem, 2vw, 3rem);
+}
+
+.sign-up-banner {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(245, 245, 220, 0.2);
+    text-align: center;
+    font-size: clamp(1rem, 4vh, 3rem);
+    font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+}
+
+.entry {
+    width: 90%;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid gray;
+    background: transparent;
+}
+
+.entry:focus {
+    outline: none;
+    border-bottom: 2px solid green;
+}
+
+.label {
+    font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+    font-size: clamp(16px, 2.5vw, 32px);
+    text-align: right;
+}
+
+input:focus:invalid {
+    border-bottom: 2px solid red;
+  }
+  
+input:focus:valid {
+    border-bottom: 2px solid green;
+  }
+
+button {
+    display: block;
+    margin: auto;
+    margin-top: 2vh;
+    border: none;
+    background-color: #fef3c7;
+    box-shadow: 20px 8px 20px -10px black;
+    border-radius: 5px;
+    font-size: clamp(1rem, 3vh, 2rem);
+    font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+    padding: 6px 18px;
+  }
+
+button:hover {
+    transform: scale(1.01);
+}
+
+a {
+    font-size: clamp(1rem, 4vh, 3rem);
+    font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+  }
+
+img {
+    display: inline-block;
+    max-height: clamp(1.5rem, 2vw, 3rem);
+}
